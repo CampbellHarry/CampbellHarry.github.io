@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry: Lets start building.</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/projects.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3PCXPVJ0P"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-B3PCXPVJ0P');
+</script>
+<link rel="icon" href="/img/logo (2).png" />
+<meta name="description" content="Harry Campbell's Portfolio">
+<meta name="author" content="Harry Campbell">
+<meta name="robots" content="index, follow">
+<meta name="googlebot" content="index, follow">
+<meta name="google" content="notranslate">
+<meta name="language" content="English">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff">
+<meta name="og:type" content="website">
+<meta name="mobile-web-app-capable" content="yes">
+<meta property="og:title" content="Harry Campbell | Portfolio">
+<meta property="og:description" content="Harry Campbell's Portfolio.">
+<meta property="og:image" content="/img/Harry Campbell.png">
+<meta property="og:url" content="https://hdev.uk">
+<meta property="og:site_name" content="Harry Campbell">
+<meta property="og:type" content="website">
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<meta name="keywords" content="Harry Campbell, Harry, Campbell, Portfolio, website, web, developer, web developer ,Cyber Security, Cyber, Security, Cyber Security Specialist, Cyber Security Engineer, cyber security, cyber, security, cyber security specialist, cyber security engineer,developer,website developer harry campbell security,application secure, IT support, IT, Support Engineer"> 
+</head>
+<body>
+    <div class="burgermenu" id="burgermenumain">
+        <div class="burgermenuinners">
+            <div class="burgermenucontent">
+                <div class="projectsburgerholder">
+                    <div class="projecttitleburger" id="projectburger" onclick="burgerprojects()">
+                        <div class="insideburgerholder">
+                            <p>Projects</p><i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="burgerdropdown hiddendropdown" id="projectburgerdropdown">
+                            <div class="burgerdropdowncontent">
+                                <a href="/projects/hcyber">
+                                    <div class="burgerdropdownitem">
+                                        <p>HCyber</p>
+                                    </div>
+                                </a>
+                                <a href="/projects/securesync">
+                                    <div class="burgerdropdownitem">
+                                        <p>SecureSync</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projecttitleburger" id="aboutburger" onclick="burgerabout()">
+                        <div class="insideburgerholder">
+                            <p>About</p><i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="burgerdropdown hiddendropdown" id="aboutburgerdropdown">
+                            <div class="burgerdropdowncontent">
+                                <a href="/about/aboutme">
+                                    <div class="burgerdropdownitem">
+                                        <p>About me</p>
+                                    </div>
+                                </a>
+                                <a href="/about/aboutme#motivation">
+                                    <div class="burgerdropdownitem">
+                                        <p>Motivation</p>
+                                    </div>
+                                </a>
+                                <a href="/contact">
+                                    <div class="burgerdropdownitem">
+                                        <p>Contact</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projecttitleburger" id="experienceburger" onclick="burgerexperience()">
+                        <div class="insideburgerholder">
+                            <p>Experience</p><i class="fas fa-arrow-right"></i>
+                        </div>
+                        <div class="burgerdropdown hiddendropdown" id="experienceburgerdropdown">
+                            <div class="burgerdropdowncontent">
+                                <a href="/experience/hdevteam">
+                                    <div class="burgerdropdownitem">
+                                        <p>Hdev Group - Team</p>
+                                    </div>
+                                </a>
+                                <a href="/experience/localbuisness">
+                                    <div class="burgerdropdownitem">
+                                        <p>Local Buisness</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="solidholdertopheader">
+            <div class="leftsidedheadercontainer">
+                <a href="/">
+                    <div class="logoholder">
+                        <img src="/img/logo (2).png">
+                    </div>
+                </a>
+                <div class="navholder">
+                    <nav id="deploydropdownzone">
+                        <ul>
+                            <li>
+                                <div class="navitem" id="projectsdrop">
+                                    <p>Projects</p>
+                                    <div class="navarrow">
+                                        <svg data-testid="geist-icon" height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16" aria-hidden="true" style="pointer-events: none; color: currentcolor;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0607 6.74999L11.5303 7.28032L8.7071 10.1035C8.31657 10.4941 7.68341 10.4941 7.29288 10.1035L4.46966 7.28032L3.93933 6.74999L4.99999 5.68933L5.53032 6.21966L7.99999 8.68933L10.4697 6.21966L11 5.68933L12.0607 6.74999Z" fill="currentColor"></path></svg>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="navitem" id="aboutsdrop">
+                                    <p>About</p>
+                                    <div class="navarrow">
+                                        <svg data-testid="geist-icon" height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16" aria-hidden="true" style="pointer-events: none; color: currentcolor;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0607 6.74999L11.5303 7.28032L8.7071 10.1035C8.31657 10.4941 7.68341 10.4941 7.29288 10.1035L4.46966 7.28032L3.93933 6.74999L4.99999 5.68933L5.53032 6.21966L7.99999 8.68933L10.4697 6.21966L11 5.68933L12.0607 6.74999Z" fill="currentColor"></path></svg>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="navitem" id="experiencedropdown">
+                                    <p>Experience</p>
+                                    <div class="navarrow">
+                                        <svg data-testid="geist-icon" height="16" stroke-linejoin="round" viewBox="0 0 16 16" width="16" aria-hidden="true" style="pointer-events: none; color: currentcolor;"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.0607 6.74999L11.5303 7.28032L8.7071 10.1035C8.31657 10.4941 7.68341 10.4941 7.29288 10.1035L4.46966 7.28032L3.93933 6.74999L4.99999 5.68933L5.53032 6.21966L7.99999 8.68933L10.4697 6.21966L11 5.68933L12.0607 6.74999Z" fill="currentColor"></path></svg>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="mobileburger" onclick="burgermenudeploy()">
+                                    <div class="burgerline"></div>
+                                    <div class="burgerline"></div>
+                                    <div class="burgerline"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="mainclassremovaldropdown">
+        <div class="bannerannounce">
+            <div class="bannerannouncecontainer">
+                <div class="bannerannouncecontent" onload="confetti();">
+                    <p>New website release 🥳</p>
+                </div>
+            </div>
+        </div>
+        <div class="insidecontainerofelements">
+            <div class="dashedzone">
+                <div class="maincontainer" style="border-bottom-left-radius: 0; height: auto;padding-bottom: 15px; border-bottom-right-radius: 0;">
+                    <div class="contentmaincontainer">
+                        <div class="lefthandsidelarger">
+                            <div class="startingtitle">
+                                <p>Hello! <span class="wave">👋</span></p>
+                                <h1>I'm Harry,</h1>
+                                <h3>I specialize in software engineering and cyber security.</h3>
+                                <h2>Let's develop your next big thing <div class="crosses">
+                                    <span class="wrongdayspantoptitle">tomorrow</span>
+                                    <span class="correctdayspantoptitle">now</span>
+                                    <span class="wrongdayspantoptitle">next week</span>
+                                </div></h2>
+                            </div>
+                            <a href="#sectioncontact" class="cta-button-link">
+                                <div class="cta-button">
+                                    Get in touch
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashedcontain"></div>
+                <div class="maincontainer" style="height: auto; border-radius: 0px;">
+                    <div class="contentmaincontainer">
+                        <div class="startingtitle" style="margin-top: 60px; margin-bottom: -40px;">
+                            <h2>More about me</h2>
+                        </div>
+                        <div class="lefthandside">
+                            <div class="aboutmecontainer">
+                                <div class="aboutmecontent">
+                                    <p>
+                                        I am a developer based in the UK with extensive knowledge and experience in various aspects of IT. My skill set includes Networking, Security, Software Development, Technical Support, and Design. Over the past three years in the IT industry, I have gained a comprehensive understanding of these fields and honed my technical skills.
+                                    </p>
+                                    <p>
+                                        Beyond hard skills, I have learned the importance of adaptability, problem-solving, and effective communication with everyone. I am passionate about using my expertise to create secure and efficient software solutions. I excel at explaining complex concepts in a language others can understand, ensuring that projects are not only technically sound but also user-friendly and innovative. Let's work together to bring your vision to life with cutting-edge technology and a focus on security.
+                                    </p>                          
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="statisticscontainer">
+                        <div class="statistics">
+                            <div class="inbuilthold"></div>
+                            <div class="statistic">
+                                <p>Projects completed</p>
+                                <h3>10+</h3>
+                            </div>
+                            <div class="inbuilthold"></div>
+                            <div class="statistic">
+                                <p>Happy clients</p>
+                                <h3>10+</h3>
+                            </div>
+                            <div class="inbuilthold"></div>
+                            <div class="statistic">
+                                <p>Years of experience</p>
+                                <h3>3+</h3>
+                            </div>
+                            <div class="inbuilthold"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashedcontain"></div>
+                <div class="maincontainer" style="height: auto; border-radius: 0;">
+                    <div class="contentmaincontainer">
+                        <div class="startingtitle" style="margin-top: 60px; margin-bottom: -20px;">
+                            <h2>Projects</h2>
+                        </div>
+                        <div class="titletextp">
+                            <p>Since starting IT I have taken a hands on approach to my learning, This includes my projects that I have created.</p>
+                        </div>
+                        <div class="projectscontainer">
+                            <div class="projectinnercontainer">
+                                <div class="project hcyber">
+                                    <a href="/projects/hcyber">
+                                        <div class="projectinners">
+                                            <div class="projectcontent">
+                                                <h3>HCyber</h3>
+                                                <p>HCyber is my current flagship product under the H Brand. The whole IT training in your browser.</p>
+                                            </div>
+                                            <div class="tagsector">
+                                                <div class="tags">
+                                                    <div class="tag">
+                                                        <p>Training</p>
+                                                    </div>
+                                                    <div class="tag">
+                                                        <p>IT</p>
+                                                    </div>
+                                                    <div class="tag">
+                                                        <p>Node.js</p>
+                                                    </div>
+                                                </div>
+                                                <div class="rotatearrow">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="project securesync">
+                                    <a href="/projects/securesync">
+                                        <div class="projectinners">
+                                            <div class="projectcontent">
+                                                <h3>SecureSync</h3>
+                                                <p>SecureSync is my project for cloud file storage.</p>
+                                            </div>
+                                            <div class="tagsector">
+                                                <div class="tags">
+                                                    <div class="tag">
+                                                        <p>Files</p>
+                                                    </div>
+                                                    <div class="tag">
+                                                        <p>Security</p>
+                                                    </div>
+                                                    <div class="tag">
+                                                        <p>Node.js</p>
+                                                    </div>
+                                                </div>
+                                                <div class="rotatearrow">
+                                                    <i class="fas fa-arrow-right"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashedcontain"></div>
+                <section class="maincontainer" id="experience"  style="height: auto; border-radius: 0;">
+                    <div class="contentmaincontainer">
+                        <div class="startingtitle" style="margin-top: 60px; margin-bottom: -30px;">
+                            <h2>Experience</h2>
+                        </div>
+                        <div class="titletextp">
+                            <p>Over the past three years, I have gained experience in various fields of IT. Here are some of the highlights.</p>
+                        </div>
+                    </div>
+                    <div class="experiencecontainer">
+                        <div class="innerexperiencecontainer">
+                            <div class="experience largerleftside">
+                                <div class="innerpadexperience">
+                                    <div class="topexperiencesection">
+                                        <div class="leftexperience">
+                                            <div class="imageholder">
+                                                <img src="/img/logo (2).png">
+                                            </div>
+                                            <div class="titlexperience">
+                                                <h3>Hdev Group</h3>
+                                                <p>Chief Developer & Founder</p>
+                                            </div>
+                                        </div>
+                                        <div class="rightexperience">
+                                            <div class="dateexperience">
+                                                <p>2023 - Present</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottomexperiencesection">
+                                        <div class="bottomexperiencecontent">
+                                            <p>
+                                                I founded Hdev in 2023 to provide software development and cyber security services to clients. I have worked on a variety of projects, including web development, cloud storage, and IT training. I am responsible for managing the company, developing software, and ensuring that projects are completed on time and within budget.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience smallerexperience">
+                                <div class="innerpadexperience">
+                                    <div class="topexperiencesection">
+                                        <div class="leftexperience">
+                                            <div class="imageholder">
+                                                <img src="/img/logo (2).png">
+                                            </div>
+                                            <div class="titlexperience">
+                                                <h3>Local Buisness</h3>
+                                                <p>IT Support Engineer</p>
+                                            </div>
+                                        </div>
+                                        <div class="rightexperience">
+                                            <div class="dateexperience classpush">
+                                                <p>2023 - Present</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bottomexperiencesection">
+                                        <div class="bottomexperiencecontent">
+                                            <p>
+                                                I currently work at a Local Buisness providing IT support to all of their systems, Networks, POS systems and more.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="dashedcontain"></div>
+                <div class="dashedzone">
+                    <div class="maincontainer" id="maincontaina" style="border-radius: 0; padding-bottom: 2rem; height: auto;">
+                        <div class="contentmaincontainer">
+                            <div class="feturesboxholder">
+                                <div class="largefeturebox">
+                                    <h2>My <span id="feturechanger">development</span> skills,<br>Your Ideas.</h2>
+                                </div>
+                                <div class="smallerfeturebox">
+                                    <div class="information" id="fullstacksite">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M5 8V20H19V8H5ZM5 6H19V4H5V6ZM20 22H4C3.44772 22 3 21.5523 3 21V3C3 2.44772 3.44772 2 4 2H20C20.5523 2 21 2.44772 21 3V21C21 21.5523 20.5523 22 20 22ZM7 10H11V14H7V10ZM7 16H17V18H7V16ZM13 11H17V13H13V11Z"></path></svg>
+                                    </div>
+                                </div>
+                                <div class="smallerfeturebox">
+                                    <div class="information" id="IT">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M4 5V16H20V5H4ZM2 4.00748C2 3.45107 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44892 22 4.00748V18H2V4.00748ZM1 19H23V21H1V19Z"></path></svg>                                    </div>
+                                </div>
+                                <div class="smallerfeturebox">
+                                    <div class="information" id="nodejs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.174 22.5552C11.4297 22.6937 11.7051 22.7729 12.0002 22.7729C12.2952 22.7729 12.5902 22.6937 12.8262 22.5947L20.6745 18.023C21.1854 17.7261 21.5 17.172 21.5 16.5781V7.45437C21.5 6.86056 21.1854 6.30644 20.6745 6.00954L12.8262 1.43778C12.3345 1.16072 11.6657 1.16072 11.174 1.43778L3.32604 6.00954C2.81468 6.30644 2.5 6.86056 2.5 7.45437V16.5781C2.5 17.172 2.81468 17.7261 3.32604 18.023L5.3913 19.2105C6.39448 19.7052 6.74854 19.7052 7.20089 19.7052C8.67604 19.7052 9.52182 18.7948 9.52182 17.2313V8.22623C9.52182 8.08765 9.4038 7.98875 9.28578 7.98875H8.28271C8.14495 7.98875 8.04667 8.10749 8.04667 8.22623V17.2313C8.04667 17.924 7.31891 18.6167 6.15844 18.023L4.01453 16.776C3.93578 16.7365 3.89651 16.6376 3.89651 16.5584V7.43453C3.89651 7.35536 3.93578 7.25647 4.01453 7.21689L11.8625 2.66486C11.9214 2.62528 12.0198 2.62528 12.0984 2.66486L19.9466 7.21689C20.0247 7.25647 20.0648 7.33563 20.0648 7.43453V16.5584C20.0648 16.6573 20.0247 16.7365 19.9466 16.776L12.0984 21.3479C12.0394 21.3875 11.9411 21.3875 11.8625 21.3479L9.85624 20.1407C9.79723 20.1011 9.71849 20.0812 9.65948 20.1208C9.10875 20.4375 9.01047 20.477 8.47937 20.6552C8.36135 20.6948 8.16469 20.774 8.55802 20.9917L11.174 22.5552ZM10.2887 13.5698C10.2887 14.9156 10.9967 16.499 14.4393 16.499C16.9169 16.499 18.3531 15.5093 18.3531 13.7677C18.3531 12.0657 17.212 11.6104 14.7929 11.2938C12.3539 10.9772 12.0982 10.799 12.0982 10.225C12.0982 9.75008 12.3146 9.11679 14.1242 9.11679C15.7367 9.11679 16.3463 9.47302 16.5828 10.5615C16.6023 10.6605 16.701 10.7397 16.7987 10.7397H17.8411C17.9008 10.7397 17.9594 10.7001 17.9994 10.6605C18.0385 10.6011 18.058 10.5418 18.058 10.4824C17.9008 8.58241 16.6619 7.71155 14.1438 7.71155C11.9015 7.71155 10.564 8.66157 10.564 10.2646C10.564 11.9865 11.9015 12.4615 14.0454 12.6792C16.6219 12.9365 16.8192 13.3126 16.8192 13.8271C16.8192 14.7177 16.1109 15.0938 14.4588 15.0938C12.3736 15.0938 11.9212 14.5792 11.7639 13.5302C11.7639 13.4115 11.6655 13.3323 11.5475 13.3323H10.5247C10.387 13.3323 10.2887 13.4511 10.2887 13.5698Z"></path></svg> </div>                                </div>
+                                <div class="smallerfeturebox">
+                                    <div class="information" id="GITskills">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M5.54429 2.67305C5.81644 2.49995 6.13587 2.41612 6.45799 2.43329C6.78102 2.4505 7.09056 2.56841 7.34318 2.77049L7.34405 2.77119C7.59044 2.96879 7.76998 3.2372 7.85866 3.5399L9.30537 7.96754H14.6944L16.1411 3.5399C16.2298 3.23722 16.4093 2.96879 16.6557 2.77116L16.6604 2.76745C16.9128 2.56777 17.2209 2.45133 17.5424 2.43423C17.8638 2.41712 18.1826 2.50023 18.4547 2.67197L18.4571 2.67347C18.7307 2.84735 18.9427 3.10328 19.0624 3.40486L19.0664 3.41491L21.5393 9.86622C21.9619 10.9712 22.0136 12.1836 21.6865 13.3205C21.3594 14.4574 20.6715 15.457 19.7263 16.1685L12.9955 21.2331L12.9945 21.2338C12.7066 21.4513 12.3554 21.5692 11.9943 21.5692C11.6332 21.5692 11.2819 21.4513 10.9939 21.2337L4.26254 16.1683C3.32063 15.4562 2.63541 14.4574 2.30989 13.3224C1.98437 12.1873 2.03616 10.9772 2.45747 9.8741L4.93724 3.40497C5.0571 3.10297 5.26966 2.84673 5.54429 2.67305ZM6.35534 4.73567L4.16029 10.4639C3.87993 11.2013 3.82298 12.0676 4.04049 12.8261C4.25704 13.5811 4.71123 14.2461 5.33544 14.7225L11.9943 19.7329L18.6484 14.7265C19.2789 14.2502 19.7379 13.5822 19.9563 12.8227C20.1751 12.0624 20.1148 11.1847 19.8328 10.4455L17.6444 4.73558L16.0001 9.76791H7.9996L6.35534 4.73567Z"></path></svg>
+                                    </div>
+                                </div>
+                                <div class="smallerfeturebox">
+                                    <div class="information" id="communication">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M9 17C9 17 16 18 19 21H20C20.5523 21 21 20.5523 21 20V13.937C21.8626 13.715 22.5 12.9319 22.5 12C22.5 11.0681 21.8626 10.285 21 10.063V4C21 3.44772 20.5523 3 20 3H19C16 6 9 7 9 7H5C3.89543 7 3 7.89543 3 9V15C3 16.1046 3.89543 17 5 17H6L7 22H9V17ZM11 8.6612C11.6833 8.5146 12.5275 8.31193 13.4393 8.04373C15.1175 7.55014 17.25 6.77262 19 5.57458V18.4254C17.25 17.2274 15.1175 16.4499 13.4393 15.9563C12.5275 15.6881 11.6833 15.4854 11 15.3388V8.6612ZM5 9H9V15H5V9Z"></path></svg>                                    </div>
+                                </div>
+                                <div class="smallerfeturebox">
+                                    <div class="information" id="network">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M11.0001 14V11H13.0001V14H18.0001C18.5524 14 19.0001 14.4477 19.0001 15V21C19.0001 21.5523 18.5524 22 18.0001 22H6.00015C5.44786 22 5.00015 21.5523 5.00015 21V15C5.00015 14.4477 5.44786 14 6.00015 14H11.0001ZM2.51074 8.83686C3.83432 4.86424 7.58275 2 12.0001 2C16.4176 2 20.166 4.86424 21.4896 8.83686L19.5917 9.46949C18.5328 6.29139 15.5341 4 12.0001 4C8.46623 4 5.46749 6.29139 4.40862 9.46949L2.51074 8.83686ZM6.3065 10.1021C7.10065 7.71854 9.34971 6 12.0001 6C14.6506 6 16.8996 7.71854 17.6938 10.1021L15.7959 10.7347C15.2665 9.1457 13.7671 8 12.0001 8C10.2332 8 8.73382 9.1457 8.20439 10.7347L6.3065 10.1021ZM7.00015 16V20H17.0001V16H7.00015Z"></path></svg> </div>                                </div>
+                                <div class="smallerfeturebox">
+                                    <div class="information" id="projectmanagment">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M23 12L15.9289 19.0711L14.5147 17.6569L20.1716 12L14.5147 6.34317L15.9289 4.92896L23 12ZM3.82843 12L9.48528 17.6569L8.07107 19.0711L1 12L8.07107 4.92896L9.48528 6.34317L3.82843 12Z"></path></svg>                            </div>
+                                </div>
+                                <div class="smallerfeturebox">
+                                    <div class="information" id="security">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM11 12.792C10.117 12.4062 9.5 11.5252 9.5 10.5C9.5 9.11929 10.6193 8 12 8C13.3807 8 14.5 9.11929 14.5 10.5C14.5 11.5252 13.883 12.4062 13 12.792V16H11V12.792Z"></path></svg>                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashedcontain"></div>
+                <section class="maincontainer" id="sectioncontact" style="border-radius: 0; padding-bottom: 2rem; height: auto;">
+                    <div class="contentmaincontainer">
+                        <div class="startingtitle" style="margin-top: 60px; margin-bottom: -30px;">
+                            <h2>Contact</h2>
+                        </div>
+                    </div>
+                        <div class="topfullbanner">
+                            <h2>Let's work together <div class="crosses" style="margin-top: 0.19rem;">
+                                <span class="wrongdayspantoptitle">later</span>
+                                <span class="correctdayspantoptitle">today.</span>
+                                <span class="wrongdayspantoptitle">tomorrow</span>
+                            </div></h2></h2>
+                        </div>
+                        <div class="contactcontainer">
+                            <div class="linkedincontact">
+                                <a href="https://www.linkedin.com/in/harry-campbell-1b1b3b1b3/" target="_blank">
+                                    <div class="contactbox">
+                                        <div class="contacticon">
+                                            <h2>Linked<i class="fab fa-linkedin"></i></h2>
+                                        </div>
+                                        <div class="contacttext">
+                                            <h3>itharrycampbell</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="emailcontact">
+                                <a href="mailto:hcampbell.dev@gmail.com">
+                                    <div class="contactbox">
+                                        <div class="contacticon">
+                                            <h2>Email</h2>
+                                        </div>
+                                        <div class="contacttext">
+                                            <h3>hcampbell.dev</h3>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="dashedcontainend"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footercontaining">
+            <div class="innerfootercontainer">
+                <div class="footerleftside">
+                    <div class="footerlogo">
+                        <img src="/img/logo (2).png"><p>©2024</p>
+                    </div>
+                    <div class="footersocials">
+                        <div class="socials">
+                            <a href="https://www.linkedin.com/in/harry-campbell-1b1b3b1b3/" class="socialslinker" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/CampbellHarry" class="socialslinker" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footercenter">
+                    <div class="footernavigate">
+                        <ul>
+                            <li>
+                                <h2>Projects</h2>
+                            </li>
+                            <li>
+                                <a href="/projects/hcyber">
+                                    HCyber
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/projects/securesync">
+                                    SecureSync
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h2>About</h2>
+                            </li>
+                            <li>
+                                <a href="/about/motivation">
+                                    Motivation
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/#sectioncontact">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h2>Experience</h2>
+                            </li>
+                            <li>
+                                <a>
+                                    Hdev Group
+                                </a>
+                                <li>
+                                    <a href="/experience/hdevteam">
+                                        Team
+                                    </a>
+                                </li>
+                            </li>
+                            <li>
+                                <a>Local Buisness</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerright">
+                    <p>Preferences</p>
+                    <div class="themechanger">
+                        <div class="darkmode" id="lightmode">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="darkmode" id="darkmode">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="/js/header.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/js/index.js"></script>
+<script src="/js/footer.js"></script>
+<script type="module">
+    confetti()
+    import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+  </script>
+</html>
