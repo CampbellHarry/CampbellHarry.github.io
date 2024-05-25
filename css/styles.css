@@ -224,6 +224,7 @@ main{
 .cta-button{
     width: 200px;
     height: 30px;
+    font-family: "Roboto", cursive;
     background-color: #2525253b;
     border: solid 1px var(--borderheader-color);
     border-radius: 10px;
@@ -352,14 +353,14 @@ main{
 @keyframes waveRotate {
     0% { transform: rotate(0deg); }
     25% { transform: rotate(-15deg); }
-    50% { transform: rotate(10deg); }
+    50% { transform: rotate(20deg); }
     75% { transform: rotate(-15deg); }
     100% { transform: rotate(0deg); }
 }
 
 .wave {
     display: inline-block;
-    animation: waveRotate 1s;
+    animation: waveRotate 3s linear 3s;
 }
 .topnbottomdashes{
     display: flex;
