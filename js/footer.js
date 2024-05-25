@@ -18,6 +18,8 @@ document.getElementById('darkmode').addEventListener('click', toggleTheme);
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'dark') {
     document.documentElement.classList.add('darkmode');
-} else {
+} else if (savedTheme === 'light') {
     document.documentElement.classList.add('lightmode');
+} else {
+    document.documentElement.classList.add('darkmode'); // Set default theme to 'darkmode'
 }
