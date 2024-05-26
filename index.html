@@ -34,11 +34,13 @@
 <meta property="og:url" content="https://hdev.uk">
 <meta property="og:site_name" content="Harry Campbell">
 <meta property="og:type" content="website">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <meta name="keywords" content="Harry Campbell, Harry, Campbell, Portfolio, website, web, developer, web developer ,Cyber Security, Cyber, Security, Cyber Security Specialist, Cyber Security Engineer, cyber security, cyber, security, cyber security specialist, cyber security engineer,developer,website developer harry campbell security,application secure, IT support, IT, Support Engineer"> 
 </head>
 <body>
+
     <div class="burgermenu" id="burgermenumain">
         <div class="burgermenuinners">
             <div class="burgermenucontent">
@@ -542,8 +544,76 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="/js/index.js"></script>
 <script src="/js/footer.js"></script>
-<script type="module">
-    confetti()
-    import confetti from 'https://cdn.skypack.dev/canvas-confetti';
-  </script>
+<script>
+var duration = 30 * 1000;
+var end = Date.now() + duration;
+
+(function frame() {
+  // launch a few confetti from the left edge
+  confetti({
+    particleCount: 100,
+    angle: 60,
+    spread: 55,
+    origin: { x: 0 }
+  });
+  // and launch a few from the right edge
+  confetti({
+    particleCount: 100,
+    angle: 120,
+    spread: 55,
+    origin: { x: 1 }
+  });
+
+}());
+</script>
+<script>
+    var clickcounter = 0;
+    document.getElementsByClassName("bannerannouncecontent")[0].addEventListener("click", function() {
+        clickcounter++;
+        confetti({
+            particleCount: 100,
+            startVelocity: 30,
+            spread: 360,
+            origin: {
+                y: -0.2
+            }
+        });
+        if (clickcounter == 10) {
+            document.getElementsByClassName("bannerannouncecontent")[0].innerHTML = "<p>How long can you go?</p>";
+        } else if (clickcounter == 20) {
+            document.getElementsByClassName("bannerannouncecontent")[0].innerHTML = "<p>Quite some time, Right...</p>";
+        } else if (clickcounter == 30) {
+            const bodytag = document.getElementsByTagName("body")[0];
+            const htmlaward = document.createElement("div");
+            document.getElementsByClassName("bannerannouncecontent")[0].innerHTML = "<p>Fine, Have your achivement you win.</p>";
+            htmlaward.classList.add("achivementcontainer");
+            htmlaward.style.display = "flex";
+            htmlaward.innerHTML = `
+                <div class="achivementcontent">
+                    <div class="insideachivement">
+                        <div class="topcontainerachivement">
+                            <p class="achivementcontenta">Device Killer</p>
+                            <p class="achivementpoints">+10</p>
+                        </div>
+                        <div class="bottomcontainerachivement">
+                            <p class="achivementcontentb">That's a lot of clicks, Calm it down.</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+            bodytag.appendChild(htmlaward);
+            setTimeout(function() {
+                document.getElementsByClassName("achivementcontent")[0].classList.add("achivementcontenthide")
+                setTimeout(function() {
+                    htmlaward.classList.add("achivementcontainerhide");
+                    setTimeout(function() {
+                        htmlaward.remove();
+                        clickcounter = 0;
+                        document.getElementsByClassName("bannerannouncecontent")[0].innerHTML = "<p>New website release 🥳</p>";
+                    }, 1000);
+                }, 1000);
+            }, 5000);
+        }
+    });
+    </script>
 </html>

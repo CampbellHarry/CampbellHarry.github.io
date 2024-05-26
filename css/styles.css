@@ -74,7 +74,9 @@ main{
 .bannerannouncecontent{
     width: 100%;
     display: flex;
+    user-select: none;
     align-items: center;
+    cursor: pointer;
     border-radius: 20px;
     justify-content: center;
 }
@@ -234,7 +236,7 @@ main{
     display: flex;
     justify-content: center;
     text-decoration: none;
-    transition: all 1s ease-in-out;
+    transition: all 0.2s ease-in-out;
     position: relative;
     align-items: center;
 }
@@ -251,9 +253,11 @@ main{
     padding: 10px 20px;
 }
 .cta-button:hover{
-    background-color: #0463883b;
+    background-color: #0463887e;
     transition: all 1s ease-in-out;
-    box-shadow: 0 0 10px 0 #0463883b;
+    box-shadow: 10px 10px 0 0 #00aeff5d;
+    transition: all 0.2s ease-in-out;
+
 }
 @keyframes shine {
     0% {
@@ -754,4 +758,104 @@ main{
     transform: translateY(-5px);
     fill: #0047AB;  
     rotate: 90deg;
+}
+.achivementcontainer{
+    display: none;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-top: 0rem;
+    user-select: none;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    animation: blurinensity 2s;
+    z-index: 2000000000000000000000000000000000000000000000000000000000000000000;
+}
+.achivementcontainerhide{
+    animation: blurinensityhide 2s forwards;  
+}
+@keyframes achivmentdropdown {
+    0% {
+        transform: translateY(-250%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes achivmentdropdownreverse {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-250%);
+    }
+}
+@keyframes blurinensity {
+    0% {
+        backdrop-filter: blur(0px);
+    }
+    100% {
+        backdrop-filter: blur(5px);
+    }
+}
+@keyframes blurinensityhide {
+    0% {
+        backdrop-filter: blur(5px);
+    }
+    100% {
+        backdrop-filter: blur(0px);
+    }
+}
+.achivementcontent{
+    width: 20%;
+    background-color: #ffffff83;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 100px;
+    animation: achivmentdropdown 2s;
+    backdrop-filter: blur(5px);
+    font-family: "roboto", sans-serif;
+    padding: 10px;
+    margin-top: 6rem;
+    border: solid 2px var(--hovered-navitem-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.achivementcontenthide{
+    animation: achivmentdropdownreverse 2s forwards;
+}
+.insideachivement{
+    width: 90%;
+    margin-top: -0.8rem;
+}
+.achivementpoints{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-weight: 600;
+    color: rgb(0, 0, 0) !important;
+}
+.achivementcontenta{
+    font-size: 1.5em;
+    color: rgb(0, 0, 0)  !important;
+    font-weight: 700;
+}
+.topcontainerachivement{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-bottom: -2.5rem;
+}
+.bottomcontainerachivement{
+    display: flex;
+    flex-direction: row;
+    color: rgb(0, 0, 0)  !important;
+}
+.achivementcontentb{
+    font-size: 1em;
+    color: rgb(0, 0, 0)  !important;
+    font-weight: 400;
 }
