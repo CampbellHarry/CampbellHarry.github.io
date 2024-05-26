@@ -226,7 +226,7 @@ main{
 .cta-button{
     width: 200px;
     height: 30px;
-    font-family: "Roboto", cursive;
+    font-family: "roboto", sans-serif;
     background-color: #2525253b;
     border: solid 1px var(--borderheader-color);
     border-radius: 10px;
