@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 
 main{
     margin-top: 2rem;
@@ -14,16 +16,88 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     width: 70%;
     height: 400px;
-    border-left: solid 1px var(--borderheader-color);
-    border-right: solid 1px var(--borderheader-color);
-    border-top: solid 1px var(--borderheader-color);
+    border-left: dashed 3px var(--borderheader-color);
+    border-right: dashed 3px var(--borderheader-color);
+    border-top: dashed 3px var(--borderheader-color);
     margin-top: 0rem;
-    border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(32, 32, 32, 0.788);
     background-image: repeating-radial-gradient(farthest-corner at 0 0,var(--radical-gray) 0,var(--radical-gray) 2%,transparent 4%,transparent 100%);
     background-size: 25px 25px;
+}
+.topleftvisual{
+    display: flex;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    background-color: var(--visualizer-color);
+    height: 20px;
+    width: 3px;
+}
+.toprightvisual{
+    display: flex;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    background-color: var(--visualizer-color);
+    height: 20px;
+    width: 3px;
+}
+.toprightsidevisual{
+    display: flex;
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    background-color: var(--visualizer-color);
+    height: 3px;
+    width: 20px;
+}
+.topleftsidevisual{
+    display: flex;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    background-color: var(--visualizer-color);
+    height: 3px;
+    width: 20px;
+}
+.bottomleftvisual{
+    display: flex;
+    position: absolute;
+    bottom: -3px;
+    left: -3px;
+    background-color: var(--visualizer-color);
+    height: 20px;
+    width: 3px;
+}
+.bottomrightvisual{
+    display: flex;
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    background-color: var(--visualizer-color);
+    height: 20px;
+    width: 3px;
+}
+.bottomrightsidevisual{
+    display: flex;
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    background-color: var(--visualizer-color);
+    height: 3px;
+    width: 20px;
+}
+.bottomleftsidevisual{
+    display: flex;
+    position: absolute;
+    bottom: -3px;
+    left: -3px;
+    background-color: var(--visualizer-color);
+    height: 3px;
+    width: 20px;
 }
 .insidecontainerofelements{
     display: flex;
@@ -40,15 +114,33 @@ main{
     justify-content: center;
     align-items: center;
 }
+.currenttime{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.time p{
+    font-size: 0.9em;
+    font-family: "Orbitron", sans-serif;
+    color: var(--grayertext-color);
+}
+.spantagc{
+    color: var(--grayertext-color);
+    font-size: 0.3em;
+    margin-left: 1rem;
+    margin-top: 1.8rem;
+}
 .dashedcontain{
     width: 70%;
     align-items: center;
     display: flex;
     justify-content: center;
-    border-right: dashed 1.5px var(--borderheader-color);
-    border-left: dashed 1.5px var(--borderheader-color);
+    border-right: solid 3px var(--visualizer-color);
+    border-left: solid 3px var(--visualizer-color);
     height: 50px;
     margin-top: -0.6rem;
+    z-index: -1000;
     margin-bottom: -0.6rem;
 }
 .dashedcontainend{
@@ -57,6 +149,7 @@ main{
     border-bottom-right-radius: 10px;
     align-items: center;
     display: flex;
+    z-index: -1000;
     justify-content: center;
     border-right: dashed 1.5px var(--borderheader-color);
     border-left: dashed 1.5px var(--borderheader-color);
@@ -107,6 +200,12 @@ main{
 .lefthandsidelarger{
     width: 100%;
 }
+.righthandside{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
 .righthandsidefulldown{
     width: 5%;
     padding-top: 10px;
@@ -146,6 +245,7 @@ main{
 }
 .startingtitleleft h1{
     font-size: 4em !important;
+
 }
 .startingtitleleft p{
     margin-top: -2rem;
@@ -166,6 +266,7 @@ main{
 }
 .startingtitle h1{
     display: flex;
+    align-items: center;
     font-size: 4em !important;
 }
 .startingtitle h3{

@@ -36,6 +36,8 @@ h1{
     --headertext-weight: 500;
     --headertext-size: 1.1em;
     --borderheader-color: #222222;
+    --visualizer-color: #999999;
+    --grayertext-color: #b6b6b6;
     --bordercolor: #333;
     --transition-times: all 0.3s ease;
     --hovered-navitem-color: #ffffff;
@@ -46,12 +48,14 @@ h1{
     --dropdowncolors: #ffffffd0;
     --text-color: #000;
     --darker-text-color: #000;
+    --grayertext-color: #222222;
     --headertext-color-nav: #000;
     --hovered-background-nav: #0000001f;
     --hovered-background-nav-dropdown: #0000001f;
     --headertext-weight: 500;
     --headertext-size: 1.1em;
     --borderheader-color: #333333;
+    --visualizer-color: #999999;
     --bordercolor: #d1cece;
     --transition-times: all 0.3s ease;
     --hovered-navitem-color: #000000;

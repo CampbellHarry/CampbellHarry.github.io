@@ -83,3 +83,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 });
+// time in hours mins and seconds devided by :
+function currenttime(){
+    document.getElementById('time').innerHTML = new Date().toLocaleTimeString();
+}
+setInterval(currenttime, 1000);
+
+function timezone(){
+    document.getElementById('timezone').innerHTML = new Date().toLocaleTimeString('en-UK', {timeZone: 'England/London'});
+}
+timezone();
