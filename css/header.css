@@ -75,6 +75,7 @@ body{
     align-items: center;
     display: flex;
     margin-left: 16%;
+    max-width: 1700px;
 }
 header{
     color: var(--text-color);
