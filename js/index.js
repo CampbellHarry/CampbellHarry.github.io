@@ -93,3 +93,6 @@ function timezone(){
     document.getElementById('timezone').innerHTML = new Date().toLocaleTimeString('en-UK', {timeZone: 'England/London'});
 }
 timezone();
+
+document.addEventListener('DOMContentLoaded', (event) => {
+});
