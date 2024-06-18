@@ -96,3 +96,4 @@ timezone();
 
 document.addEventListener('DOMContentLoaded', (event) => {
 });
+
