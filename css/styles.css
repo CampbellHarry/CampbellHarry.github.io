@@ -971,6 +971,7 @@ main{
     gap: 15px;
     font-weight: 600;
     font-size: medium;
+    text-decoration: none;
     align-items: center;
     color: rgb(245 245 245 / 90%);
 }
