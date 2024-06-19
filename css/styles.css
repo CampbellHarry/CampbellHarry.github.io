@@ -963,8 +963,8 @@ main{
     font-weight: 400;
 }
 .aboxteam{
-    border: solid 1px rgb(64 64 64);
-    background-color: rgb(24, 24, 24);
+    border: solid 1px var(--abox);
+    background-color: var(--aboxmain);
     border-radius: 3px;
     padding: 3px 3px;
     width: auto;
@@ -973,7 +973,7 @@ main{
     font-size: medium;
     text-decoration: none;
     align-items: center;
-    color: rgb(245 245 245 / 90%);
+    color: var(--aboxcolour);
 }
 .aboxteam img{
     width: 20px;

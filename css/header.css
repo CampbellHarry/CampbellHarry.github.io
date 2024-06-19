@@ -42,6 +42,9 @@ h1{
     --transition-times: all 0.3s ease;
     --hovered-navitem-color: #ffffff;
     --radical-gray: #bac6c945;
+    --abox: rgb(64 64 64);
+    --aboxmain: rgb(24, 24, 24);
+    --aboxcolour: rgb(245 245 245 / 90%);
 }
 .lightmode{
     --background-color: #fffffff6;
@@ -60,7 +63,9 @@ h1{
     --transition-times: all 0.3s ease;
     --hovered-navitem-color: #000000;
     --radical-gray: #000000;
-
+    --abox: rgb(44, 44, 44);
+    --aboxmain: rgb(189, 189, 189);
+    --aboxcolour: rgb(24 24 24 / 90%);
 }
 body{
     background-color: var(--background-color);
